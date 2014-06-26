@@ -12,11 +12,11 @@ When you want to stub the module's dependencies in KarmaJS test runner.
 ### How to use?
 
 1. Load mocker
-2. Define your mocks
-3. Create new context
-4. Load your dependency
+2. Define your mocks: object with full path as a key, and mock object as a value
+3. Create new context by passing mocks object into mocker
+4. Require your dependency in traditional way
 
-## Example
+### Example
 Let's say we have two modules: `foo.js` and `bar.js`. Foo depends on Bar. So, we need to mock it.
 
 Here's the Bar module:
