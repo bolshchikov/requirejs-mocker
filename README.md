@@ -62,6 +62,10 @@ The test spec with QUnit:
           foo.execute();
           ok(spy.called);
         });
-        
       });
+      
+### Credits
+Big thanks for inspiration to
+* [karma-requirejs setup](https://github.com/scriptfoundry/karma-requirejs-mock)
+* [stackoverflow answers](http://stackoverflow.com/questions/11439540/how-can-i-mock-dependencies-for-unit-testing-in-requirejs/11695463#11695463)
     
