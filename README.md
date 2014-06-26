@@ -7,7 +7,7 @@ When you want to stub the module's dependencies in KarmaJS test runner.
  
 ### How to install?
 
-    bower install requirejs-mocker
+    bower install requirejs-mocker --save-dev
 
 ### How to use?
 
