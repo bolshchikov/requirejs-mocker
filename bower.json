@@ -1,0 +1,27 @@
+{
+  "name": "requirejs-mocker",
+  "version": "0.0.1",
+  "homepage": "https://github.com/bolshchikov/requirejs-mocker",
+  "authors": [
+    "bolshchikov <sergey@bolshchikov.net>"
+  ],
+  "description": "creating new context for requirejs to mock dependencies",
+  "main": "mocker.js",
+  "keywords": [
+    "mock",
+    "requirejs",
+    "test",
+    "karmajs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.14"
+  }
+}
