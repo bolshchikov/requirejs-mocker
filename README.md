@@ -45,28 +45,28 @@ define(['src/bar'], function (bar) {
 
 The test spec with QUnit:
 ```js
- define(['mocker', 'sinon'], function (mocker, sinon) {
+define(['mocker', 'sinon'], function (mocker, sinon) {
+  
+  QUnit.stop();                     // stop the qunit run till the module is loaded
+  var fooModule;
    
-   QUnit.stop();                     // stop the qunit run till the module is loaded
-   var fooModule;
-    
-   var spy = sinon.spy();            // create spy with sinon
-   
-   var mocks = {                     // create the mock for bar
-     'src/bar': { callMe: spy } 
-   };
-   
-   var ctx = mocker(mocks);
-   ctx(['src/foo'], function (foo) {
-     fooModule = foo;
-     QUnit.start()
-   });
-   
-   test('foo.execute', function () {
-     foo.execute();
-     ok(spy.called);
-   });
- });
+  var spy = sinon.spy();            // create spy with sinon
+  
+  var mocks = {                     // create the mock for bar
+    'src/bar': { callMe: spy } 
+  };
+  
+  var ctx = mocker(mocks);
+  ctx(['src/foo'], function (foo) {
+    fooModule = foo;
+    QUnit.start()
+  });
+  
+  test('foo.execute', function () {
+    foo.execute();
+    ok(spy.called);
+  });
+});
  ```
       
 ### Credits
