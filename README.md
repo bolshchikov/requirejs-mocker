@@ -21,7 +21,7 @@ bower install requirejs-mocker --save-dev
 ### Example
 Let's say we have two modules: `foo.js` and `bar.js`. Foo depends on Bar. So, we need to mock it.
 
-Here's the Bar module:
+Here's the `bar` module:
 ```js
 define(function () {
   return {
